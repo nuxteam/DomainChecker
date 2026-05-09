@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@source inline("translate-x-0");
+@source inline("translate-x-5");
+@source inline("peer-checked:translate-x-5");
+@source inline("peer-checked:bg-black");

@@ -14,6 +14,7 @@
 /.zed
 /auth.json
 /node_modules
+node_modules
 /public/build
 /public/fonts-manifest.dev.json
 /public/hot
@@ -25,8 +26,8 @@ _ide_helper.php
 Homestead.json
 Homestead.yaml
 Thumbs.db
-src/node_modules/
-src/vendor/
+src/node_modules
+src/vendor
 src/.env
 src/.env.*
 src/storage/*.key

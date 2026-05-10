@@ -5,7 +5,7 @@ use App\Http\Controllers\DomainController;
 use App\Http\Controllers\SettingsController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route(auth()->check() ? 'dashboard' : 'login');
 });
 
 Route::middleware(['auth', 'throttle:80,1'])->group(function () {

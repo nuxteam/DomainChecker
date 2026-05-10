@@ -1,37 +1,66 @@
-*.log
-.DS_Store
+# =====================
+# ENV / SECRETS
+# =====================
 .env
-.env.backup
-.env.production
+.env.*
+!.env.example
+
+# =====================
+# LOGS
+# =====================
+*.log
+
+# =====================
+# SYSTEM
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# IDE
+# =====================
+.idea/
+.vscode/
 .phpactor.json
 .phpunit.result.cache
-/.codex
-/.cursor/
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
-/node_modules
-node_modules
-/public/build
-/public/fonts-manifest.dev.json
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
-_ide_helper.php
+.phpunit.cache/
+.nova/
+.zed/
+.cursor/
+.codex/
+
+# =====================
+# LARAVEL CORE
+# =====================
+vendor/
+storage/*.key
+storage/pail/
+bootstrap/cache/*.php
+
+# =====================
+# FRONTEND (VITE / NPM)
+# =====================
+node_modules/
+public/build/
+public/hot
+
+# =====================
+# LARAVEL PUBLIC STORAGE SYMLINK
+# =====================
+public/storage
+
+# =====================
+# HOMESTEAD (если вдруг есть)
+# =====================
 Homestead.json
 Homestead.yaml
-Thumbs.db
-src/node_modules
-src/vendor
-src/.env
-src/.env.*
-src/storage/*.key
-src/storage/pail
-src/public/build
-src/public/hot
-src/public/storage
+
+# =====================
+# AUTH / COMPOSER
+# =====================
+auth.json
+
+# =====================
+# OPTIONAL HELPERS
+# =====================
+_ide_helper.php
